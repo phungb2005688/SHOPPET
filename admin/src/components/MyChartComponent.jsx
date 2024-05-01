@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Chart as ChartJS, LineElement, PointElement, LinearScale, CategoryScale, registerables } from 'chart.js';
+import { Chart as ChartJS, registerables } from 'chart.js';
 
 ChartJS.register(...registerables);
 

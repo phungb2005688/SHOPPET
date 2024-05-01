@@ -13,6 +13,7 @@ import Message from '../components/Message';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
 
+
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
 
