@@ -1,0 +1,377 @@
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* 3 item cuối của thanh header  */
+.nav-link-custom {
+  color: white;
+}
+
+.nav-link-custom:focus,
+.nav-link-custom:hover {
+  color: #ffbf00;
+}
+
+/* item name cart */
+.nav-link-custom1 {
+  color: black;
+}
+
+.nav-link-custom1:focus,
+.nav-link-custom1:hover {
+  color: #ffbf00;
+}
+
+/* button all */
+.button-link-custom {
+  background-color: white;
+  color: black;
+}
+
+.button-link-custom:focus,
+.button-link-custom:hover {
+  color: white;
+  background-color: #000;
+}
+
+/* Footer icon */
+.icon-custom {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* introduces */
+.introduce {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+/* sign-in */
+.item-value {
+  margin-top: 10px;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 0.7s infinite;
+}
+
+/* list bảng ở admin và user  */
+.table-sm {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  border-collapse: collapse;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
+.table-sm thead th {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-sm tbody tr:hover {
+  background-color: #fff;
+  color: #562B00;
+}
+
+
+.table-sm td,
+.table-sm th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.table-sm th:first-child {
+  border: 1px #ddd;
+  border-top-left-radius: 30px; /* Bo góc trên bên trái */
+}
+
+/* CSS cho cột cuối cùng */
+.table-sm th:last-child {
+  border: 1px #ddd;
+  border-top-right-radius: 30px; /* Bo góc trên bên phải */
+}
+.shadow-table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow-table:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+/* dropdown admin */
+.custom-dropdown-menu {
+  width: 200px;
+  max-width: 100%;
+}
+
+.custom-dropdown-align {
+  right: 0;
+  left: auto;
+  transform: translateX(-100%);
+}
+/* Thanh điều hướng */
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.SideMenuAndPageContent {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.SideMenu {
+  flex: 0 0 150px;
+  height: calc(100% - 60px); /* Giảm chiều cao của sidemenu nếu header chiếm không gian */
+  position: fixed;
+  left: 0;
+ /* Đặt sidemenu xuống dưới để không bị header che lấp */
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.SideMenuVertical {
+  height: 100%;
+  position: fixed; /* Nếu bạn muốn sử dụng thuộc tính này cho .SideMenuVertical */
+}
+
+.ant-menu-item.ant-menu-item-active,
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #ffbf00	 !important;
+  color: white !important; /* Đổi màu chữ nếu cần */
+}
+.ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title {
+  background-color: #562B00 !important;
+  color: white !important;
+}
+/* footer ở admin */
+.Content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 140px; /* Thêm padding trái bằng với chiều rộng của sidemenu */
+}
+.MainContent {
+  flex: 1;
+}
+
+.Footer {
+  /* flex: 0 0 10px; */
+  background-color: #b7b7b7;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu-logo {
+  margin-left: 15px;
+}
+
+.header {
+  position: sticky;
+  top: 0;        
+  z-index: 1000; 
+  width: 100%;  
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+/* Tạo khoảng cách  */
+.distance {
+margin-top: 50px;
+}
+
+/* BLOG */
+.blog-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.03);
+}
+
+.blog-image {
+  height: auto;
+  width: 100%;
+}
+
+.blog-title {
+  color: #007bff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.blog-cate {
+  color: #dc3545; 
+  font-size: 0.95rem;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  background-color: #fff3cd; 
+  border-radius: 0.25rem; 
+  padding: 0.25rem 0.5rem; 
+  display: inline-block; 
+  margin-top: 0.5rem; 
+}
+
+.blog-description {
+  font-size: 10px;
+}
+
+.link-no-decoration {
+  text-decoration: none;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CSS cho container chính chứa form và thống kê */
+.stats-container {
+  background-color: #fff; /* Màu nền trắng */
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Khoảng cách bên trong */
+  margin-top: -5px; /* Khoảng cách bên ngoài */
+  margin-bottom: 30px;
+}
+
+/* CSS cho các thành phần bên trong để đảm bảo khoảng cách đều */
+.stats-row {
+  margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+}
+
+.card-color{
+  background-color: #5bd75b;
+  border: 2px solid #fff ;
+  /* border-radius: 10px; */
+  color: #000
+}
+.card-color2{
+  background-color: #5bd75b;
+  border: 2px solid #fff ;
+  /* border-radius: 10px; */
+  color: #000
+}
+
+.card-color-img{
+  padding: 5px;
+}
+
+/* Form đăng nhập */
+.login-form-container {
+  position: relative;
+  margin: auto;
+  width: 550px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8,7,16,0.2 );
+  z-index: 2;
+  overflow: hidden; /* Đảm bảo các phần tử nền không tràn ra ngoài */
+}
+
+.login-form-container::before {
+  content: '';
+  position: absolute;
+  top: -50%; 
+  left: -50%;
+  width: 200%;
+  height: 200%; 
+  background: linear-gradient(135deg, #9fcef7, #7ed6fb,  #f78ca0, #f0c27b, #4b1248, #9fcef7, #54ff9b, #79dea3);
+  background-size: 500% 500%;
+  animation: backgroundAnimation 5s ease infinite;
+  z-index: -1;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}

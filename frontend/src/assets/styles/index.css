@@ -1,0 +1,548 @@
+main {
+  min-height: 80vh;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.rating svg {
+  color: #f8e825;
+}
+
+.rating-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+
+.product-title {
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+table td,
+table th {
+  text-align: center;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.review h2 {
+  font-size: 24px;
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.review button {
+  margin-top: 10px;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* 3 item cuối của thanh header  */
+.nav-link-custom {
+  color: white; 
+  position: relative;
+  display: inline-block; 
+}
+
+
+.nav-link-custom .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, 5%); 
+  background-color: red;
+  color: white; 
+  border-radius: 50%; 
+  /* padding: 3px;   */
+}
+
+/* header ở phía dưới */
+.header-nav-link {
+  display: block; /* Đảm bảo liên kết mở rộng đầy đủ */
+  padding: 10px 15px; /* Thêm đủ padding để tăng kích thước clickable */
+  color: white; /* Màu chữ */
+}
+
+.header-nav-link.active {
+  background-color: #333; /* Màu nền cho liên kết đang hoạt động */
+  color: #fff; /* Màu chữ cho liên kết đang hoạt động */
+}
+
+
+/* item name cart */
+.nav-link-custom1 {
+  color: black; 
+}
+
+.nav-link-custom1:focus, .nav-link-custom1:hover {
+  color: #FFBF00; 
+}
+
+/* button all */
+.button-link-custom {
+  background-color: white;
+  color: black; 
+  /* display: block; */
+  width: 100%; /* Nút phải đủ rộng để dễ nhấn */
+  margin-top: 20px;
+}
+
+.button-link-custom:focus, .button-link-custom:hover {
+  color: white; 
+  background-color: #000;
+}
+
+.button-link-custom1 {
+  background-color: white;
+  color: black; 
+  width: 100%; /* Nút phải đủ rộng để dễ nhấn */
+  margin-top: 20px;
+}
+
+.button-link-custom1:focus, .button-link-custom1:hover {
+  color: #000; 
+  background-color: #faca3a;
+}
+
+/* Footer icon */
+.icon-custom {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* introduces */
+.introduce {
+  font-family: Arial, Helvetica, sans-serif; text-align: justify;
+}
+
+/* sign-in */
+.item-value {
+  margin-top: 10px;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s infinite;
+}
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Đảm bảo form luôn ở giữa trang */
+  background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+}
+
+.Form {
+  padding: 30px;
+  border-radius: 40px;
+  border: 1px solid #c2c2c2;
+  background-color: white; /* Đối tượng nền trắng để tập trung vào form */
+  box-shadow:  35px 55px  rgba(0, 0, 0, 0.1); /* Thêm bóng để nổi bật form */
+  width: 100%;
+  max-width: 500px; /* Giới hạn chiều rộng tối đa của form */
+}
+.Form1 {
+  padding: 30px;
+  border-radius: 40px;
+  border: 1px solid #c2c2c2;
+  background-color: white; /* Đối tượng nền trắng để tập trung vào form */
+  box-shadow:  20px 35px  rgba(0, 0, 0, 0.1); /* Thêm bóng để nổi bật form */
+  width: 100%;
+  max-width: 500px; /* Giới hạn chiều rộng tối đa của form */
+}
+/* list bảng ở admin và user  */
+.table-sm {
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-collapse: collapse;
+
+}
+
+.table-sm thead th {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+}
+
+.table-sm tbody tr:hover {
+  background-color: #ffffff;
+}
+
+.table-sm td, .table-sm th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.table-sm th:first-child {
+  border: 1px #ddd;
+  border-top-left-radius: 30px;  /* Bo góc trên bên trái */
+}
+
+/* CSS cho cột cuối cùng */
+.table-sm th:last-child {
+  border: 1px #ddd;
+  border-top-right-radius: 30px;  /* Bo góc trên bên phải */
+}
+.shadow-table {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow-table:hover {
+  box-shadow: 0 6px 12px rgba(211, 211, 211, 0.1);
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+/* dropdown admin */
+.custom-dropdown-menu {
+  width: 200px; 
+  max-width: 100%; 
+}
+
+.custom-dropdown-align {
+  right: 0; 
+  left: auto; 
+  transform: translateX(-100%); 
+}
+
+/* hover sản phẩm */
+.card-hover-effect {
+  transition: box-shadow 0.3s ease-in-out, transform 0.1s ease;
+}
+
+.card-hover-effect:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ */
+  transform: translateY(-15px); /* Nhẹ nhàng nâng card lên */
+}
+
+
+.blog-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+  transition: transform 0.3s ease-in-out;
+  height: 370px;
+}
+
+.blog-card:hover {
+  transform: scale(1.03);
+}
+
+.blog-image {
+  height: 151px;
+  width: 100%;
+}
+
+
+.blog-cate {
+  color: #dc3545; 
+  font-size: 0.95rem;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  background-color: #fff3cd; 
+  border-radius: 0.25rem; 
+  padding: 0.25rem 0.5rem; 
+  display: inline-block; 
+  margin-top: 0.5rem; 
+}
+
+.blog-description {
+  font-size: 10px;
+}
+
+.link-no-decoration {
+  text-decoration: none;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* liên hệ - contact */
+/* .contact-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.contact-form input, .contact-form textarea {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  border-bottom-color: #f8e825; 
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.step {
+  width: 33%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: -20px;
+
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  width: 20px;
+  height: 20px;
+  /* background-color: #ddd; */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.step.completed {
+  color: green;
+}
+
+/* .step.completed::after {
+  background-color: green;
+} */
+
+.arrow {
+  font-size: 24px;
+  line-height: 1;
+}
+.icon {
+  color: #ddd;
+  font-size: 30px; 
+}
+
+.step.completed .icon {
+  color: #28a745; 
+}
+
+.contact-form {
+  background-color: #fff; /* Màu nền cho form */
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid #ccc; 
+  z-index: 2;
+  position: relative;
+
+}
+.container-contact {
+  position: relative;
+  overflow: hidden; 
+  background-color: #f5f5ff;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+.form-control-underline {
+  background: transparent; /* Nền trong suốt */
+  border: none; /* Bỏ các viền */
+  border-bottom: 1px solid #ccc; /* Viền dưới màu xám */
+  border-radius: 0; /* Bỏ bo góc */
+  box-shadow: none; /* Bỏ bóng đổ */
+}
+
+.form-control-underline:focus {
+  background: transparent; /* Nền trong suốt */
+  border: none; /* Bỏ các viền */
+  border-bottom-color: #FFBF00; /* Thay đổi màu viền khi trường được focus */
+  box-shadow: 0 1px 0 0 #FFBF00; /* Thêm bóng đổ tinh tế khi focus */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  animation-timing-function: linear; /* Chuyển động đều */
+  animation-iteration-count: infinite; 
+}
+
+.circle1 { 
+  animation-name: moveCircle1; 
+  animation-duration: 10s; 
+  background-color: rgba(253, 154, 228, 0.5); 
+
+}
+.circle2 { 
+  animation-name: moveCircle2; 
+  animation-duration: 8s; 
+  background-color: rgba(154, 253, 185, 0.5); 
+
+}
+.circle3 { 
+  animation-name: moveCircle3; 
+  animation-duration: 12s; 
+  background-color: rgba(154, 253, 185, 0.5); 
+
+}
+.circle4 { 
+  animation-name: moveCircle4; 
+  animation-duration: 7s; 
+  background-color: rgba(154, 220, 253, 0.5); 
+
+}
+.circle5 { 
+  animation-name: moveCircle5; 
+  animation-duration: 15s; 
+  background-color: rgba(253, 154, 228, 0.5); 
+
+}
+
+
+@keyframes moveCircle1 {
+  from { transform: translateX(0); }
+  to { transform: translateX(300px); }
+}
+
+@keyframes moveCircle2 {
+  from { transform: translateX(0); }
+  to { transform: translateX(-300px); }
+}
+
+@keyframes moveCircle3 {
+  from { transform: translateY(0); }
+  to { transform: translateY(300px); }
+}
+
+@keyframes moveCircle4 {
+  from { transform: translateY(0); }
+  to { transform: translateY(-300px); }
+}
+
+@keyframes moveCircle5 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(150px, 150);
+  }
+}
+
+.square {
+  position: absolute;
+  width: 70px;  
+  height: 70px;
+  z-index: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.square1 { animation-name: moveSquare1;
+  animation-duration: 15s; 
+  background-color: rgba(253, 154, 228, 0.5); 
+ }
+.square2 { animation-name: moveSquare2;
+  animation-duration: 10s; 
+  background-color: rgba(154, 210, 253, 0.5); 
+ }
+.square3 { animation-name: moveSquare3; 
+  animation-duration: 7s; 
+  background-color: rgba(154, 220, 253, 0.5); 
+}
+
+@keyframes moveSquare1 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(250px, 250px); }
+}
+
+@keyframes moveSquare2 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-250px, 250px); }
+}
+
+@keyframes moveSquare3 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(250px, -250px); }
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  animation-duration: 18s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.triangle1 {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid rgba(255, 165, 0, 0.7); /* Màu cam với độ trong suốt */
+  animation-name: moveTriangle1;
+}
+
+.triangle2 {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid rgba(199, 21, 133, 0.7); /* Màu hồng với độ trong suốt */
+  animation-name: moveTriangle2;
+}
+
+.triangle3 {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid rgba(75, 0, 130, 0.7); /* Màu tím với độ trong suốt */
+  animation-name: moveTriangle3;
+}
+
+@keyframes moveTriangle1 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(300px, 300px); }
+}
+
+@keyframes moveTriangle2 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(300px, 300px); }
+}
+
+@keyframes moveTriangle3 {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-300px, -300px); }
+}
+
+.active-link {
+  background-color: #ffbf00; 
+  color: #000;
+}
+.pagination {
+  justify-content: end;
+}
+
